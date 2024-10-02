@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/styleуу.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attorneyster legal services</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="hero-content">
+            <img src="../assets/images/IMAGE (4).jpg" alt="Background image" class="hero-background">
+            <div class="hero-overlay">
+                <header class="header-container">
+                    <nav class="nav-menu">
+                        <div class="menu-icon" id="menuToggle">
+                            <div class="icon-bars">
+                                <div class="icon-bar"></div>
+                                <div class="icon-bar"></div>
+                                <div class="icon-bar"></div>
+                            </div>
+                            
+                            <div class="menu-line"></div>
+                        </div>
+                        <h2 class="bottom-text lng-logo">Attorneyster</h2>
+                    </nav>
+                    <div class="cta-container">
+                        <section>
+                            <div class="container556">
+
+                                <button class="buttons556 lng-login" id="logoutButton">Logout</button>
+                            </div>
+
+
+                            <script src="../javascripts/logoutt.js"></script>
+
+
+                        </section>
+                        <a href="../htmlll/priem.html" class="cta-button lng-book ">Book A Consultation</a>
+
+                    </div>
+                </header>
+                <div class="partner-logos" id="navMenu">
+
+                    <button class="lng-register" id="theme-toggle">Theme</button>
+
+
+                </div>
+
+               
+
+                    <ul class="links-nav" id="navLinks">
+                        <li><a href="../htmlll/Index2.html" class="home-link lng-home">Home</a></li>
+                        <li><a href="../htmlll/aboutUS.html" class="about-link lng-about">About Us</a></li>
+                        <li><a href="../htmlll/pages.html" class="pages-link lng-pages">Pages</a></li>
+                        <li><a href="../htmlll/ContactUs.html" class="contact-link lng-contact">Contact Us</a></li>
+                    </ul>
+
+                
+                <hr class="divider">
+ <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+    </script>
+                <select class="change-lang">
+                    <option value="en" selected>EN</option>
+                    <option value="ru">RU</option>
+                </select>
+
+
+
+                </select>
+
+
+                <section class="partners-section">
+                    <div class="features-container">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="../assets/images/Frame (1)-Photoroom.jpg" alt="Feature icon"
+                                    class="partner-logo">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title lng-call">Call Us On</h3>
+                                <p class="feature-description">+375447764098</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="../assets/images/Frame (3)-Photoroom.jpg" alt="Feature icon"
+                                    class="partner-logo">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title lng-mail">Email Us On:</h3>
+                                <a href="https://e.mail.ru/sent/"
+                                    class="feature-description">vladislav.ge45@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr class="divider">
+                <section class="bottom-section">
+                    <div class="bottom-content">
+                        <div class="left-column">
+                            <div class="left-content">
+                                <img src="../assets/images/IMAGE (3)-Photoroom.jpg" alt="Attorneyster logo"
+                                    class="bottom-logo">
+
+                                <p class="bottom-description lng-were">We're Group of Certified law Professionals</p>
+                                <p class="bottom-description1 lng-wehave">We have helped countless maritime workers and
+                                    their
+                                    families go up against the largest offshore companies and win</p>
+                                <button class="cta-button-bottom" id="getInTouch">
+                                    <span class="cta-text-bottom lng-getin">Get in Touch</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <img src="../assets/images/IMAGE (2)-Photoroom.jpg" alt="Legal professionals"
+                                class="right-image">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="lng-login1">Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button class="cta-button lng-submit" id="loginSubmit">Submit</button>
+            <div class="notification lng-sucl">Login successful!</div>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="lng-register1">Register</h2>
+            <input type="text" id="newUsername" placeholder="Username">
+            <input type="password" id="newPassword" placeholder="Password">
+            <button class="cta-button lng-submit1" id="registerSubmit">Submit</button>
+            <div class="notification lng-sucr">Registration successful!</div>
+        </div>
+    </div>
+
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="lng-book1">Book A Consultation</h2>
+            <div class="consultation-options">
+                <div class="consultation-option lng-brian" data-attorney="Brian Golez">Brian Golez</div>
+                <div class="consultation-option lng-martha" data-attorney="Martha Black">Martha Black</div>
+                <div class="consultation-option lng-john" data-attorney="John Turner">John Turner</div>
+            </div>
+            <div class="time-slots" style="display: none;">
+                <div class="time-slot">9:00 AM</div>
+                <div class="time-slot">11:00 AM</div>
+                <div class="time-slot">2:00 PM</div>
+                <div class="time-slot">4:00 PM</div>
+            </div>
+            <div class="notification lng-bookza">Your consultation has been booked successfully!</div>
+        </div>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="lng-contact1">Contact Us</h2>
+            <p>Phone: +375447764098</p>
+        </div>
+    </div>
+
+    <script src="../javascripts/java.js"></script>
+    <script src="../javascripts/burger.js"></script>
+
+
+
+
+    <div class="gallery-container">
+        <section class="gallery-content">
+            <aside class="gallery-column-left">
+                <img loading="lazy" src="../assets/images/FRAME2N1.jpg" alt="First gallery image" />
+                <img loading="lazy" src="../assets/images/Frame2N2.jpg" class="gallery-image-top"
+                    alt="Second gallery image" />
+            </aside>
+            <section class="gallery-column-right">
+                <div class="gallery-section-top">
+                    <h1 class="gallery-image-full lng-welcome">Welcome to Attorney Law -</h1>
+                    <h1 class="gallery-image-full lng-law">Lawyer & Law Firm Company</h1>
+                    <img loading="lazy" src="../assets/images/IMAGE (3)-Photoroom.jpg" class="gallery-image-small"
+                        alt="Fifth gallery image" />
+                    <h1 class="gallery-image-wide lng-although">Although we are located in Brooklyn, our maritime
+                        lawyers are proud
+                        to help the injured throughout the nation, including workers who were working in foreign waters
+                        at the time of the incident go up against the largest offshore companies and win.</h1>
+                    <div class="gallery-double-image">
+                        <div class="gallery-image-square">
+                            <img loading="lazy" src="../assets/images/Frame2N5.jpg" alt="Seventh gallery image" />
+                        </div>
+                        <h1 class="gallery-logo-long lng-peter">Peter Parker</h1>
+                    </div>
+                </div>
+                <div class="gallery-section-bottom">
+                    <div class="gallery-half-left">
+                        <div class="gallery-box-dark">
+                            <img loading="lazy" src="../assets/images/Frame2N7-Photoroom.png"
+                                alt="Ninth gallery image" />
+                            <div>
+                                <h1 class="tittleff1">95%</h1>
+                                <h1 class="tittleff1 lng-case">Case Success</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-half-right">
+                        <div class="gallery-box-light">
+                            <img loading="lazy" src="../assets/images/Frame2N8.jpg" alt="Twelfth gallery image" />
+                            <div>
+                                <h1 class="tittleff2 lng-years">Years</h1>
+                                <h1 class="tittleff2 lng-exp">Experience</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </div>
+
+    <section class="product-features1">
+        <div class="features-container1">
+            <header class="header-content1">
+                <div class="logo-container1">
+                    <h1 class="logo1 lng-explore">Explore The Perfect</h1>
+                    <h1 class="tagline1 lng-our">Our Practice Areas</h1>
+                    <img src="../assets/images/IMAGE (3)-Photoroom.jpg" alt="Feature icon" class="partner-logo">
+                </div>
+                <h1 class="hero-image1 lng-weare">We are a group of civil litigation/trial attorneys who focus on
+                    providing a
+                    justice based on the issues relating to insurance defense, insurance coverage, bad faith, insurance
+                    fraud and criminal litigation.</h1>
+            </header>
+            <div class="features-grid1">
+                <div class="features-row1">
+                    <article class="feature-column1">
+                        <div class="feature-card1">
+                            <h1 class="feature-icon1 lng-business">Business Law</h1>
+                            <h2 class="feature-title1 lng-advanced">Advanced Analytics</h2>
+                            <hr class="feature-divider1">
+                            <footer class="feature-footer1">
+                                <img src="../assets/images/Frame3N1.png" alt="Additional Feature Icon"
+                                    class="feature-icon-small1">
+                                <div class="feature-button1" id="feature1-button1">
+                                    <span class="button-text1 lng-view1">View More</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="feature-column1">
+                        <div class="feature-card1">
+                            <h1 class="feature-icon2 lng-construction">Construction Law</h1>
+                            <h2 class="feature-title1 lng-cloud">Cloud Integration</h2>
+                            <hr class="feature-divider1">
+                            <footer class="feature-footer1">
+                                <img src="../assets/images/Frame3N2.png" alt="Additional Feature Icon"
+                                    class="feature-icon-small1">
+                                <div class="feature-button1" id="feature2-button1">
+                                    <span class="button-text1 lng-view2">View More</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="feature-column1">
+                        <div class="feature-card1">
+                            <h1 class="feature-icon1 lng-car">Car Accident</h1>
+                            <h2 class="feature-title1 lng-ai">AI-Powered Insights</h2>
+                            <hr class="feature-divider1">
+                            <footer class="feature-footer1">
+                                <div>
+                                    <img src="../assets/images/Frame3N3.png" alt="Additional Feature Icon"
+                                        class="feature-icon-small1">
+
+                                </div>
+                                <div class="feature-button1" id="feature3-button1">
+                                    <span class="button-text lng-view3">View More</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+                <div class="features-row1">
+                    <article class="feature-column1">
+                        <div class="feature-card1">
+                            <h1 class="feature-icon3 lng-wrongful">Wrongful Death</h1>
+                            <h2 class="feature-title1 lng-secure">Secure Data Management</h2>
+                            <hr class="feature-divider1">
+                            <footer class="feature-footer1">
+                                <img src="../assets/images/Frame3N4.png" alt="Additional Feature Icon"
+                                    class="feature-icon-small1">
+                                <div class="feature-button1" id="feature4-button1">
+                                    <span class="button-text1 lng-view4">View More</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="feature-column1">
+                        <div class="feature-card1">
+                            <h1 class="feature-icon1 lng-criminal">Criminal Law</h1>
+                            <h2 class="feature-title1 lng-scalable">Scalable Infrastructure</h2>
+                            <hr class="feature-divider1">
+                            <footer class="feature-footer1">
+                                <img src="../assets/images/Frame5N5.png" alt="Additional Feature Icon"
+                                    class="feature-icon-small1">
+                                <div class="feature-button1" id="feature5-button1">
+                                    <span class="button-text1 lng-view5">View More</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="feature-column1">
+                        <div class="feature-card1">
+                            <h1 class="feature-icon1 lng-family">Family Law</h1>
+                            <h2 class="feature-title1 lng-support">24/7 Support</h2>
+                            <hr class="feature-divider1">
+                            <footer class="feature-footer1">
+                                <img src="../assets/images/Frame6N6.png" alt="Additional Feature Icon"
+                                    class="feature-icon-small1">
+                                <div class="feature-button1" id="feature6-button1">
+                                    <span class="button-text1 lng-view6">View More</span>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="feature1-modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close1">&times;</span>
+            <h2 class="lng-advanced1">Advanced Analytics</h2>
+            <p class="lng-our1">Our advanced analytics feature provides deep insights into your business data, helping
+                you make informed
+                decisions and drive growth.</p>
+        </div>
+    </div>
+    <div id="feature2-modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close1">&times;</span>
+            <h2 class="lng-cloud1">Cloud Integration</h2>
+            <p class="lng-seamlessly">Seamlessly integrate your systems with our cloud-based solution, enabling
+                efficient data management and
+                accessibility from anywhere.</p>
+        </div>
+    </div>
+    <div id="feature3-modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close1">&times;</span>
+            <h2 class="lng-ai1">AI-Powered Insights</h2>
+            <p class="lng-leverage">Leverage the power of artificial intelligence to uncover hidden patterns and
+                generate actionable insights
+                for your business.</p>
+        </div>
+    </div>
+    <div id="feature4-modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close1">&times;</span>
+            <h2 class="lng-secure1">Secure Data Management</h2>
+            <p class="lng-protect">Protect your valuable data with our state-of-the-art security measures, ensuring
+                compliance and peace of
+                mind.</p>
+        </div>
+    </div>
+    <div id="feature5-modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close1">&times;</span>
+            <h2 class="lng-scalable1">Scalable Infrastructure</h2>
+            <p class="lng-our2">Our scalable infrastructure grows with your business, providing the flexibility and
+                performance you need
+                at every stage.</p>
+        </div>
+    </div>
+    <div id="feature6-modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close1">&times;</span>
+            <h2 class="lng-support1">24/7 Support</h2>
+            <p class="lng-our3">Our dedicated support team is available around the clock to assist you with any
+                questions or issues you
+                may encounter.</p>
+        </div>
+    </div>
+    <script src="../javascripts/ButtonMoreView.js"></script>
+
+
+
+
+
+    <section class="justice-section">
+        <div class="content-wrapper">
+            <h2 class="section-title lng-fighting">Fighting to get what</h2>
+            <h2 class="section-title lng-you">you deserve</h2>
+            <img src="../assets/images/FRAME4N2.jpg" alt="Justice scales icon" class="section-image" />
+            <p class="section-description lng-our4">Our board-certified family law attorneys work to achieve a fair and
+            </p>
+            <p class="section-description lng-timely">timely resolution of the legal issues in your case.</p>
+            <div class="stats-container">
+                <div class="stats-wrapper">
+                    <div class="stat-column">
+                        <div class="stat-box">
+                            <div class="stat-content">
+                                <div class="stat-number-wrapper">
+                                    <div class="stat-number-box">
+                                        <img src="../assets/images/Vector-Photoroom.png" alt="Client icon"
+                                            class="stat-icon" />
+                                        <span>7230</span>
+                                    </div>
+                                </div>
+                                <div class="stat-text-wrapper">
+                                    <div class="stat-text-content">
+                                        <h3 class="stat-title lng-trusted">Trusted Clients</h3>
+                                        <p class="stat-subtitle lng-number">Number of clients we've</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-box">
+                            <div class="stat-content">
+                                <div class="stat-number-wrapper">
+                                    <div class="stat-number-box">
+                                        <img src="../assets/images/Frame4N6.png" alt="Success icon" class="stat-icon" />
+                                        <span>98%</span>
+                                    </div>
+                                </div>
+                                <div class="stat-text-wrapper">
+                                    <div class="stat-text-content">
+                                        <h3 class="stat-title lng-succ">Successful Cases</h3>
+                                        <p class="stat-subtitle lng-largest">Largest winning value</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="case-stat">
+                            <span class="case-stat-number">15,890+</span>
+                            <span class="case-stat-text lng-criminal1">Criminal Defense</span>
+                            <span class="case-stat-text lng-case1">Case Served</span>
+                        </div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-box">
+                            <div class="stat-content">
+                                <div class="stat-number-wrapper">
+                                    <div class="stat-number-box">
+                                        <img src="../assets/images/Vector-Photoroom.png" alt="Client icon"
+                                            class="stat-icon" />
+                                        <span>7230</span>
+                                    </div>
+                                </div>
+                                <div class="stat-text-wrapper">
+                                    <div class="stat-text-content">
+                                        <h3 class="stat-title lng-trusted1">Trusted Clients</h3>
+                                        <p class="stat-subtitle lng-number1">Number of clients we've</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-box">
+                            <div class="stat-content">
+                                <div class="stat-number-wrapper">
+                                    <div class="stat-number-box">
+                                        <img src="../assets/images/Frame4N6.png" alt="Success icon" class="stat-icon" />
+                                        <span>98%</span>
+                                    </div>
+                                </div>
+                                <div class="stat-text-wrapper">
+                                    <div class="stat-text-content">
+                                        <h3 class="stat-title lng-succ1">Successful Cases</h3>
+                                        <p class="stat-subtitle lng-largest1">Largest winning value</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="case-stat">
+                            <span class="case-stat-number">15,890+</span>
+                            <span class="case-stat-text lng-criminal2">Criminal Defense</span>
+                            <span class="case-stat-text lng-case2">Case Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="section-divider" />
+        </div>
+    </section>
+
+
+    <section class="partner-logos2">
+        <div class="partner-logos-container2">
+            <div class="top-logos2">
+                <div class="logo-wrapper2">
+                    <img loading="lazy" src="../assets/images/FRAME4N4.jpg" class="logo-image2 logo-image-12"
+                        alt="Partner logo 1">
+                </div>
+                <p class="center-text2 lng-meet">Meet The Partners</p>
+                <div class="logo-wrapper2">
+                    <img loading="lazy" src="../assets/images/FRAME4N4.jpg" class="logo-image2 logo-image-12"
+                        alt="Partner logo 3">
+                </div>
+            </div>
+            <div class="bottom-logos2">
+                <button class="carousel-button2 carousel-button-left2" aria-label="Previous logos">&lt;</button>
+                <div class="logo-carousel2">
+                    <a href="#" class="logo-slide2">
+                        <img loading="lazy" src="../assets/images/FRAME7N1.jpg" class="logo-image2 logo-image-32"
+                            alt="Partner logo 4">
+                    </a>
+                    <a href="#" class="logo-slide2">
+                        <img loading="lazy" src="../assets/images/FRAME7N2.jpg" class="logo-image2 logo-image-42"
+                            alt="Partner logo 5">
+                    </a>
+                    <a href="#" class="logo-slide2">
+                        <img loading="lazy" src="../assets/images/FRAME7N3.jpg" class="logo-image2 logo-image-52"
+                            alt="Partner logo 6">
+                    </a>
+                    <a href="#" class="logo-slide2">
+                        <img loading="lazy" src="../assets/images/FRAME7N4.jpg" class="logo-image2 logo-image-62"
+                            alt="Partner logo 7">
+                    </a>
+                    <a href="#" class="logo-slide2">
+                        <img loading="lazy" src="../assets/images/FRAME7N5.jpg" class="logo-image2 logo-image-72"
+                            alt="Partner logo 8">
+                    </a>
+                </div>
+                <button class="carousel-button2 carousel-button-right2" aria-label="Next logos">&gt;</button>
+            </div>
+        </div>
+    </section>
+    <script src="../javascripts/CllickRightLeftButton.js"></script>
+
+
+
+
+    <section class="product-gallery">
+        <h1 class="logo lng-client">Client Opinions & Reviews</h1>
+        <img src="../assets/images/FRAME8N1.png" alt="Sublogo" class="sublogo" />
+
+        <div class="gallery-container1">
+            <div class="gallery-grid">
+                <div class="product-column">
+                    <img src="../assets/images/FRAME8N2.jpg" alt="Product 1" class="product-image" />
+                    <div class="product-info">
+                        <img src="../assets/images/FRAME8N3.png" alt="Product 1 icon" class="product-icon" />
+                        <div class="product-details">
+                            <h1 class="product-name lng-natasha">Natasha</h1>
+                            <h1 class="product-description lng-private">Private Employee</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-column">
+                    <div class="product-info">
+                        <img src="../assets/images/FRAME8N4.png" alt="Product 2 icon" class="product-icon" />
+                        <div class="product-details">
+                            <h1 class="product-name-wide lng-hannah">Hannah Butler</h1>
+                            <h1 class="product-description-wide lng-business1">Business Sector</h1>
+                        </div>
+                    </div>
+                    <img src="../assets/images/FRAME8N5.jpg" alt="Product 2" class="product-image-tall" />
+                </div>
+
+                <div class="product-column">
+                    <img src="../assets/images/FRAME8N6.jpg" alt="Product 3" class="product-image" />
+                    <div class="product-info">
+                        <img src="../assets/images/FRAME8N7.png" alt="Product 3 icon" class="product-icon" />
+                        <div class="product-details">
+                            <h1 class="product-name-medium lng-phillip">Phillip Arnold</h1>
+                            <h1 class="product-description-medium lng-bus">Bus Driver</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-column">
+                    <div class="product-info">
+                        <img src="../assets/images/FRAME8N8.png" alt="Product 4 icon" class="product-icon" />
+                        <div class="product-details">
+                            <h1 class="product-name-wide lng-joshua">Joshua Warren</h1>
+                            <h1 class="product-description-wide lng-private1">Private Engineer</h1>
+                        </div>
+                    </div>
+                    <img src="../assets/images/FRAME8N9.jpg" alt="Product 4" class="product-image-short" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured-products">
+        <div class="featured-products__container">
+            <h6 class="featured-products__logo lng-logo1">Our Experienced Attorney Are Ready</h6>
+            <h6 class="featured-products__title lng-to">To answer any questions</h6>
+            <img src="../assets/images/FRAME4N4.jpg" alt="Featured Products Subtitle"
+                class="featured-products__subtitle" />
+            <div class="product-grid">
+                <div class="product-grid__row">
+                    <div class="product-grid__column">
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="../assets/images/FRAME9N1.jpg" alt="Product 1" class="product-card__image" />
+                                <div class="product-card__social-container">
+                                    <div class="product-card__social-wrapper">
+                                        <a href="#" aria-label="Share on Facebook">
+                                            <img src="../assets/images/Vector (1).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Twitter">
+                                            <img src="../assets/images/Vector (2).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Instagram">
+                                            <img src="../assets/images/Vector (3).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Pinterest">
+                                            <img src="../assets/images/Vector (4).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                    </div>
+                                    <div class="product-card__social-divider"></div>
+                                </div>
+                            </div>
+                            <img src="../assets/images/John Turner.jpg" alt="Product 1 Name"
+                                class="product-card__name" />
+                            <img src="../assets/images/Civil Attorney.jpg" alt="Product 1 Price"
+                                class="product-card__price" />
+                        </article>
+                    </div>
+                    <div class="product-grid__column">
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="../assets/images/FRAME9N2.jpg" alt="Product 2" class="product-card__image" />
+                                <div class="product-card__social-container">
+                                    <div class="product-card__social-wrapper">
+                                        <a href="#" aria-label="Share on Facebook">
+                                            <img src="../assets/images/Vector (1).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Twitter">
+                                            <img src="../assets/images/Vector (2).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Instagram">
+                                            <img src="../assets/images/Vector (3).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Pinterest">
+                                            <img src="../assets/images/Vector (4).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                    </div>
+                                    <div class="product-card__social-divider"></div>
+                                </div>
+                            </div>
+                            <img src="../assets/images/Martha Black.jpg" alt="Product 2 Name"
+                                class="product-card__name" />
+                            <img src="../assets/images/Associate Attorney.jpg" alt="Product 2 Price"
+                                class="product-card__price" />
+                        </article>
+                    </div>
+                    <div class="product-grid__column">
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="../assets/images/FRAME9N3.jpg" alt="Product 3" class="product-card__image" />
+                                <div class="product-card__social-container">
+                                    <div class="product-card__social-wrapper">
+                                        <a href="#" aria-label="Share on Facebook">
+                                            <img src="../assets/images/Vector (1).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Twitter">
+                                            <img src="../assets/images/Vector (2).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Instagram">
+                                            <img src="../assets/images/Vector (3).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                        <a href="#" aria-label="Share on Pinterest">
+                                            <img src="../assets/images/Vector (4).jpg" alt=""
+                                                class="product-card__social-icon" />
+                                        </a>
+                                    </div>
+                                    <div class="product-card__social-divider"></div>
+                                </div>
+                            </div>
+                            <img src="../assets/images/Brian Gomez.jpg" alt="Product 3 Name"
+                                class="product-card__name" />
+                            <img src="../assets/images/Titular Attorney.jpg" alt="Product 3 Price"
+                                class="product-card__price" />
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="product-showcase5">
+        <div class="showcase-container5">
+            <div class="showcase-content5">
+                <div class="product-column5">
+                    <div class="product-details5">
+                        <h1 class="product-image5 lng-our5">Our professional Expert law team is always ready to serve
+                            you</h1>
+                        <img src="../assets/images/IMAGE (3)-Photoroom.jpg" alt="Логотип продукта"
+                            class="product-logo5" />
+                        <p class="product-description5 lng-were1">
+                            We’re always available for new cases big or small. Send us an email and we’ll get in touch
+                            shortly, or phone between 8:00 am and 7:00 pm Monday to Saturday.
+                        </p>
+                        <a href="#" class="cta-button5 lng-contact2" role="button">Contact Us</a>
+                    </div>
+                </div>
+                <div class="info-column5">
+                    <div class="info-container5">
+                        <div class="info-content5">
+                            <h2 class="info-title5 lng-get">Get a Free Consultation</h2>
+                            <p class="info-text5 lng-you1">
+                                You can get free consultation and case evaluation from us via the following contact
+                                number
+                            </p>
+                            <div class="author-section5">
+                                <img src="../assets/images/FRAME10N1.jpg" alt="Портрет дизайнера"
+                                    class="author-image5" />
+                                <div class="author-details5">
+                                    <p class="author-name5 lng-call1">Сall On US:</p>
+                                    <p class="author-title5">+375447764098</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-accent5" aria-hidden="true"></div>
+        </div>
+    </section>
+
+
+
+    <section class="appointment-section">
+        <img src="../assets/images/BackGround10.jpg" alt="Background" class="background-image">
+        <form id="appointmentForm" class="appointment-form">
+            <div class="form-header">
+                <h2 class="lng-get1">Get An Appointment</h2>
+                <p class="lng-please">Please fill out the form below to schedule your appointment</p>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName" class="lng-full">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required aria-required="true">
+                    <span id="fullNameError" class="error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="lng-mail1">Email Address</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <span id="emailError" class="error" role="alert"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone" class="lng-phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required aria-required="true">
+                    <span id="phoneError" class="error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="lng-subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required aria-required="true">
+                    <span id="subjectError" class="error" role="alert"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="lng-your">Your Message</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                <span id="messageError" class="error" role="alert"></span>
+            </div>
+            <button type="submit" class="submit-btn lng-getan">Get An Appointment</button>
+        </form>
+    </section>
+    <script src="../javascripts/TARGCONSULTING.js"></script>
+
+
+
+
+    <section class="new-hero-container">
+        <div class="new-hero-background">
+            <div class="new-hero-content">
+                <div class="new-hero-columns">
+                    <div class="new-hero-image-column">
+                        <img src="../assets/images/FRAME11N1.jpg" alt="Hero background image"
+                            class="new-hero-main-image" loading="lazy">
+                    </div>
+                    <div class="new-hero-text-column">
+                        <div class="new-hero-text-content">
+                            <div class="new-hero-logo-container">
+                                <h1 class="new-hero-logo lng-corporate">Corporate Law</h1>
+                                <div class="new-hero-divider" aria-hidden="true"></div>
+                                <h1 class="new-hero-subtitle lng-friday">Friday, February 4, 2022</h1>
+                            </div>
+                            <div class="new-hero-separator" aria-hidden="true"></div>
+                            <h1 class="new-hero-title lng-empowering">Empowering Innovation Through Blockchain
+                                Technology</h1>
+                            <p class="new-hero-description lng-weare1">We are a leading blockchain development company,
+                                dedicated
+                                to creating innovative solutions that revolutionize industries and empower businesses
+                                worldwide.</p>
+                            <a href="#" class="new-hero-cta lng-learn" id="learnMoreBtn">Learn More</a>
+                            <div class="new-hero-cta-underline" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="learnMoreModal" class="new-modal">
+        <div class="new-modal-content">
+            <span class="new-close">&times;</span>
+            <h2 class="new-text lng-additional">Additional Information</h2>
+            <p class="new-text lng-here">Here you can find more details about our blockchain technology and how it can
+                benefit
+                your business. Our team of experts is dedicated to providing cutting-edge solutions tailored to your
+                specific needs.</p>
+        </div>
+    </div>
+
+    <script src="../javascripts/VEAWBLOCK1.js"></script>
+
+
+    <div class="container">
+
+        <div class="article-row">
+            <div class="article">
+                <img src="../assets/images/FRAME12N1.jpg" alt="Описание изображения 1">
+                <h3 class="TIttlle lng-corporate1">Corporate Law | Friday, February 4, 2022</h3>
+                <p class="lng-capitalize">Capitalize on low-hanging fruit to identify a ballpark value added matrix
+                    economically activity
+                    to beta test override the digital.</p>
+                <div class="view-more-container">
+                    <button class="view-more-btn view-more-btn-1 lng-view7">View More</button>
+                </div>
+                <div class="popup popup-1">
+                    <span class="close-btn">&times;</span>
+                    <h4 class="lng-corporate2"> Corporate Law</h4>
+                    <p class="lng-capitalize1">Capitalize on low-hanging fruit to identify a ballpark value added matrix
+                        economically
+                        activity to beta test override the digital..</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="../assets/images/FRAME12N2.jpg" alt="Описание изображения 2">
+                <h3 class="TIttlle lng-legal">Legal Advice | Friday, February 4, 2022</h3>
+                <p class="lng-strategies">Strategies on low-hanging fruit to identify a ballpark value added activity
+                    matrix economically
+                    to beta test override the digital.</p>
+                <div class="view-more-container">
+                    <button class="view-more-btn view-more-btn-2 lng-view8">View More</button>
+                </div>
+                <div class="popup popup-2">
+                    <span class="close-btn">&times;</span>
+                    <h4 class="lng-legal1"> Legal Advice</h4>
+                    <p class="lng-strategies1">Strategies on low-hanging fruit to identify a ballpark value added
+                        activity matrix
+                        economically to beta test override the digital.</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="../assets/images/FRAME12N3.jpg" alt="Описание изображения 3">
+                <h3 class="TIttlle lng-social">Social Justice | Friday, February 4, 2022</h3>
+                <p class="lng-collaborative">Collaborative on low-hanging fruit to identify a ballpark value added
+                    activity to beta matrix
+                    economically test override the digital.</p>
+                <div class="view-more-container">
+                    <button class="view-more-btn view-more-btn-3 lng-view9">View More</button>
+                </div>
+                <div class="popup popup-3">
+                    <span class="close-btn">&times;</span>
+                    <h4 class="lng-social1">Social Justice</h4>
+                    <p class="lng-collaborative1">Collaborative on low-hanging fruit to identify a ballpark value added
+                        activity to beta matrix
+                        economically test override the digital.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-row">
+            <div class="article">
+                <img src="../assets/images/FRAME12N4.jpg" alt="Описание изображения 4">
+                <h3 class="TIttlle lng-corporate3">Corporate Law | Friday, February 4, 2022</h3>
+                <p class="lng-podcasting">Podcasting on low-hanging fruit to identify a ballpark value added activity to
+                    beta test override
+                    matrix economically the digital.</p>
+                <div class="view-more-container">
+                    <button class="view-more-btn view-more-btn-4 lng-view10">View More</button>
+                </div>
+                <div class="popup popup-4">
+                    <span class="close-btn">&times;</span>
+                    <h4 class="lng-corporate4">Corporate Law</h4>
+                    <p class="lng-podcasting1">Podcasting on low-hanging fruit to identify a ballpark value added
+                        activity to beta test
+                        override matrix economically the digital.</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="../assets/images/FRAME12N5.jpg" alt="Описание изображения 5">
+                <h3 class="TIttlle lng-legal2">Legal Advice | Friday, February 4, 2022</h3>
+                <p class="lng-efficiently">Efficiently on low-hanging fruit to identify a ballpark value added activity
+                    to beta test matrix
+                    economically override the digital.</p>
+                <div class="view-more-container">
+                    <button class="view-more-btn view-more-btn-5 lng-view11">View More</button>
+                </div>
+                <div class="popup popup-5">
+                    <span class="close-btn">&times;</span>
+                    <h4 class="lng-legal3">Legal Advice</h4>
+                    <p class="lng-efficiently1">Efficiently on low-hanging fruit to identify a ballpark value added
+                        activity to beta test
+                        matrix economically override the digital.</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="../assets/images/FRAME12N6.jpg" alt="Описание изображения 6">
+                <h3 TIttlle class="lng-social2">Social Justice | Friday, February 4, 2022</h3>
+                <p class="lng-objectively">Objectively on low-hanging fruit to identify a ballpark value added activity
+                    to beta matrix
+                    economically test override the digital.</p>
+                <div class="view-more-container">
+                    <button class="view-more-btn view-more-btn-6 lng-view12">View More</button>
+                </div>
+                <div class="popup popup-6">
+                    <span class="close-btn">&times;</span>
+                    <h4 class="lng-social3"> Social Justice</h4>
+                    <p class="lng-objectively1">Objectively on low-hanging fruit to identify a ballpark value added
+                        activity to beta matrix
+                        economically test override the digital.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../javascripts/VIewBUttons.js"></script>
+
+    <img class="ImgLast" src="../assets/images/FRAMELAST.jpg" alt="Фотография">
+
+
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="footer-line"></div>
+                <h1>
+                    <span style="display: inline-block;"></span>
+                    <img src="../assets/images/LOGOO.png" alt="Attorneyster Logo">
+                    <span style="display: inline-block;" class="lng-attorneyster"></span>
+                    Attorneyster
+                </h1>
+                <div class="footer-line"></div>
+            </div>
+            <div class="content">
+                <div class="column">
+                    <h3 class="lng-quick">Quick Link</h3>
+                    <ul>
+                        <li><a class="lng-home1" href="#">Home</a></li>
+                        <li><a class="lng-about1" href="#">About Us</a></li>
+                        <li><a class="lng-pricing" href="#">Pricing</a></li>
+                        <li><a class="lng-test" href="#">Testimonial</a></li>
+                        <li><a class="contact3" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="lng-utility">Utility Pages</h3>
+                    <ul>
+                        <li><a class="lng-style" href="#">Style Guide</a></li>
+                        <li><a class="lng-licenses" href="#">Licenses</a></li>
+                        <li><a class="lng-protected" href="#">Protected</a></li>
+                        <li><a class="lng-change" href="#">Changelog</a></li>
+                        <li><a class="lng-error" href="#">Error Page</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="lng-practice">Practice Area</h3>
+                    <ul>
+                        <li><a class="lng-business2" href="#">Business Law</a></li>
+                        <li><a class="lng-construction1" href="#">Construction Law</a></li>
+                        <li><a class="lng-car1" href="#">Car Accident</a></li>
+                        <li><a class="lng-criminal3" href="#">Criminal Law</a></li>
+                        <li><a class="lng-family1" href="#">Family Law</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="lng-contact3">Contact Us</h3>
+                    <p class="lng-attorney">Attorney Law Office, 121 King Street, <br> 90027, USA.</p>
+                    <p class="lng-phone1">Phone: (011) 9876 54321</p>
+                    <p class="lng-mail2">Email: Info@Example.Com</p>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="lng-copy">Copyright © Attorney Law | Designed by <span class="lng-victor"
+                        style="color: #d4af37;">VictorFlow</span> - Powered by
+                    <span class="lng-web" style="color: #d4af37;">Webflow</span>.
+                </p>
+                <div class="social-icons">
+                    <span class="lng-folow">Follow :</span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="../javascripts/ELEMENTBYTEG.js"></script>
+        <script src="../javascripts/lang.js"></script>
+        <script src="../javascripts/app.js"></script>
+        <script src="../javascripts/dark.js"></script>
+
+    </body>
+
+</html>

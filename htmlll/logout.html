@@ -1,0 +1,39 @@
+
+        .container556 {
+            background-color: #1d1d1d;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            text-align: center;
+        }
+        .buttons556 {
+            width: 100%;
+            padding: 12px;
+            background-color: #d4a373;
+            color: #1d1d1d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+
+
+<div class="container556">
+    <h1>Welcome to Another Page</h1>
+    <button class="buttons556 " id="logoutButton">Logout</button>
+</div>
+
+<script>
+    const logoutButton = document.getElementById('logoutButton');
+
+    logoutButton.addEventListener('click', () => {
+       
+        window.location.href = '../htmlll/RegFile.html'; 
+    });
+</script>
+
+</body>
+</html>
