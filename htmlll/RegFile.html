@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/regfile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    
+</head>
+<body>
+
+<div class="container">
+    <button id="startButton">Start Registration</button>
+    <button id="loginButton" class="hidden btns">Login</button>
+    <a class="ssbtn" href="../htmlll/indxwithoutlogin.html">Go to site without login</a>
+
+    <div id="registrationForm" class="hidden">
+        <button id="closeButton">&times;</button>
+        <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="+375XXXXXXXXX">
+            <div id="phoneError" class="error hidden">Invalid phone number.</div>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <div id="emailError" class="error hidden">Invalid email address.</div>
+        </div>
+
+        <div class="input-group">
+            <label for="birthdate">Date of Birth</label>
+            <input type="date" id="birthdate">
+            <div id="birthdateError" class="error hidden">You must be at least 16 years old.</div>
+        </div>
+
+        <div class="input-group">
+            <label for="passwordChoice">Password Choice</label>
+            <select id="passwordChoice">
+                <option value="auto">Automatic</option>
+                <option value="manual">Manual</option>
+            </select>
+        </div>
+
+        <div id="manualPasswordFields" class="hidden">
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <div id="passwordError" class="error hidden">Passwords do not match.</div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="checkbox" id="showPasswords">
+            <label for="showPasswords">Show Passwords</label>
+        </div>
+
+        <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Surname Name Patronymic">
+            <div id="nameError" class="error hidden">Name is required.</div>
+        </div>
+
+        <div class="input-group">
+            <label for="nickname">Nickname</label>
+            <input type="text" id="nickname" readonly>
+            <button id="generateNickname">Generate Nickname</button>
+            <div id="nicknameError" class="error hidden">Failed to generate a nickname.</div>
+        </div>
+
+        <div class="input-group">
+            <input type="checkbox" id="isAdmin">
+            <label for="isAdmin">Register as Admin</label>
+        </div>
+
+        <div class="input-group">
+            <input type="checkbox" id="agree">
+            <label for="agree">I have read the User Agreement</label>
+            <div id="agreeError" class="error hidden">You must agree to the terms.</div>
+        </div>
+
+        <button id="registerButton" disabled>Register</button>
+    </div>
+
+    <div id="adminSection" class="hidden">
+        <button id="showUsersButton">Show Users</button>
+        <ul id="users" class="hidden"></ul>
+        <button id="externalLinkButton">Go to Another Site</button>
+        <button id="logoutButton">Logout</button>
+    </div>
+</div>
+<script src="../javascripts/regfile.js"></script>
+
+
+</body>
+</html>

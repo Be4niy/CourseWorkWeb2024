@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../assets/css/priem.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/images/LOGOO.png" alt="Logo">
+            <span data-en="Attorneyster" data-ru="Адвокат">Attorneyster</span>
+        </div>
+        <nav class="nav">
+            <a href="../htmlll/Index2.html" data-en="Home" data-ru="Главная">Home</a>
+            <a href="../htmlll/aboutUS.html" data-en="About Us" data-ru="О нас">About Us</a>
+            <a href="../htmlll/pages.html" data-en="Pages" data-ru="Страницы">Pages</a>
+            <a href="../htmlll/ContactUs.html" data-en="Contact Us" data-ru="Контакты">Contact Us</a>
+            <select id="languageSelector">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+            </select>
+            <button class="theme-toggle" id="themeToggle">Light Theme</button>
+        </nav>
+        <div class="contact-info">
+            <span data-en="Call Us On: +375447764098" data-ru="Звоните нам по номеру: +375447764098">Call Us On: +375447764098</span>
+            <span data-en="Email Us On: vladik@law.com" data-ru="Пишите нам на: vladik@law.com">Email Us On: vladik@law.com</span>
+        </div>
+    </header>
+
+    <section class="appointment-section">
+        <img src="../assets/images/BackGround10.jpg" alt="Background" class="background-image">
+        <form id="appointmentForm" class="appointment-form">
+            <div class="form-header">
+                <h2 class="lng-get1" data-en="Get An Appointment" data-ru="Записаться на прием">Get An Appointment</h2>
+                <p class="lng-please" data-en="Please fill out the form below to schedule your appointment" data-ru="Пожалуйста, заполните форму ниже, чтобы записаться на прием">Please fill out the form below to schedule your appointment</p>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName" class="lng-full" data-en="Full Name" data-ru="Полное имя">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required aria-required="true">
+                    <span id="fullNameError" class="error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="lng-mail1" data-en="Email Address" data-ru="Адрес электронной почты">Email Address</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <span id="emailError" class="error" role="alert"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone" class="lng-phone" data-en="Phone Number" data-ru="Номер телефона">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required aria-required="true">
+                    <span id="phoneError" class="error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="lng-subject" data-en="Subject" data-ru="Тема">Subject</label>
+                    <input type="text" id="subject" name="subject" required aria-required="true">
+                    <span id="subjectError" class="error" role="alert"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="lng-your" data-en="Your Message" data-ru="Ваше сообщение">Your Message</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                <span id="messageError" class="error" role="alert"></span>
+            </div>
+            <button type="submit" class="submit-btn lng-getan" data-en="Get An Appointment" data-ru="Записаться на прием">Get An Appointment</button>
+        </form>
+    </section>
+    <div class="main-container">
+        <div class="top-header">
+            <div class="divider-line"></div>
+            <h1>
+                <span style="display: inline-block;"></span>
+                <img src="../assets/images/LOGOO.png" alt="Attorneyster Logo">
+                <span style="display: inline-block;" data-class="lng-attorneyster"></span>
+                Attorneyster
+            </h1>
+            <div class="divider-line"></div>
+        </div>
+        <div class="main-content">
+            <div class="link-column">
+                <h3 data-class="lng-quick">Quick Link</h3>
+                <ul>
+                    <li><a data-class="lng-home1" href="../htmlll/Index2.html">Home</a></li>
+                    <li><a data-class="lng-about1" href="../htmlll/aboutUS.html">About Us</a></li>
+                    <li><a data-class="lng-pricing" href=".//pages.html">Pages</a></li>
+                    <li><a data-class="lng-test" href="../htmlll/priem.html">Priem</a></li>
+                    <li><a data-class="lng-contact3" href="../htmlll/ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="utility-column">
+                <h3 data-class="lng-utility">Utility Pages</h3>
+                <ul>
+                    <li><a data-class="lng-style" href="#">Style Guide</a></li>
+                    <li><a data-class="lng-licenses" href="#">Licenses</a></li>
+                    <li><a data-class="lng-protected" href="#">Protected</a></li>
+                    <li><a data-class="lng-change" href="#">Changelog</a></li>
+                    <li><a data-class="lng-error" href="#">Error Page</a></li>
+                </ul>
+            </div>
+            <div class="practice-column">
+                <h3 data-class="lng-practice">Practice Area</h3>
+                <ul>
+                    <li><a data-class="lng-business2" href="#">Business Law</a></li>
+                    <li><a data-class="lng-construction1" href="#">Construction Law</a></li>
+                    <li><a data-class="lng-car1" href="#">Car Accident</a></li>
+                    <li><a data-class="lng-criminal3" href="#">Criminal Law</a></li>
+                    <li><a data-class="lng-family1" href="#">Family Law</a></li>
+                </ul>
+            </div>
+            <div class="contact-column">
+                <h3 data-class="lng-contact3">Contact Us</h3>
+                <p data-class="lng-attorney">Attorney Law Office, 121 King Street, <br> 90027, USA.</p>
+                <p data-class="lng-phone1">Phone: (011) 9876 54321</p>
+                <p data-class="lng-mail2">Email: Info@Example.Com</p>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p data-class="lng-copy">Copyright © Attorney Law | Designed by <span data-class="lng-victor" style="color: #d4af37;">VictorFlow</span> - Powered by
+                <span data-class="lng-web" style="color: #d4af37;">Webflow</span>.
+            </p>
+            <div class="social-media-icons">
+                <span data-class="lng-folow">Follow :</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="../javascripts/changetranslationforPriembydateclass.js"></script>
+    <script src="../javascripts/TARGCONSULTING.js"></script>
+</body>
+</html>
