@@ -1,0 +1,529 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.light-theme {
+    background-color: #fff;
+    color: #222;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.light-theme header {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.light-theme nav ul li a {
+    color: #222;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info div {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #ffcc00;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btn-consultation {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.btn-consultation:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 40px 20px;
+}
+
+.light-theme .info-section {
+    background-color: #eee;
+}
+
+.info-block {
+    max-width: 300px;
+    text-align: left;
+    border-left: 1px solid #555;
+    padding-left: 20px;
+}
+
+.info-block:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.info-block h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.info-block p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info div {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 9px;
+    }
+
+    .btn-consultation {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block {
+        max-width: none;
+        margin-bottom: 20px;
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lng-attorney2.logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info div, .contact-info a, #theme-toggle {
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .info-section {
+        padding: 10px;
+    }
+
+    .info-block {
+        margin-bottom: 20px;
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #d4af37;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1::before,
+.header h1::after {
+    content: '';
+    width: 150px;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 0 20px;
+}
+
+.header h1 img {
+    margin: 0 20px;
+    height: 40px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 40px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .social-icons a {
+    margin-right: 20px;
+}
+
+.footer .social-icons i {
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 23%;
+}
+
+.column h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: w;
+}
+
+.column li {
+    margin-bottom: 15px;
+}
+
+.column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 60px 10px;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .header h1::before,
+    .header h1::after {
+        width: 80px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        margin-top: 20px;
+    }
+}
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.top-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.top-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #d4af37;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-header h1::before,
+.top-header h1::after {
+    content: '';
+    width: 150px;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 0 20px;
+}
+
+.top-header h1 img {
+    margin: 0 20px;
+    height: 40px;
+}
+
+.divider-line {
+    width: 100%;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 40px 0;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.bottom-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-footer li {
+    margin-bottom: 15px;
+}
+
+.bottom-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-media-icons a {
+    margin-right: 20px;
+}
+
+.social-media-icons i {
+    font-size: 1.5em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-column,
+.utility-column,
+.practice-column,
+.contact-column {
+    width: 23%;
+}
+
+.link-column h3,
+.utility-column h3,
+.practice-column h3,
+.contact-column h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.link-column ul,
+.utility-column ul,
+.practice-column ul,
+.contact-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: w;
+}
+
+.link-column li,
+.utility-column li,
+.practice-column li,
+.contact-column li {
+    margin-bottom: 15px;
+}
+
+.link-column a,
+.utility-column a,
+.practice-column a,
+.contact-column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 60px 10px;
+    }
+
+    .top-header h1 {
+        font-size: 2.2em;
+    }
+
+    .top-header h1::before,
+    .top-header h1::after {
+        width: 80px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .link-column,
+    .utility-column,
+    .practice-column,
+    .contact-column {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-media-icons {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .top-header h1 {
+        font-size: 1.8em;
+    }
+
+    .top-header h1::before,
+    .top-header h1::after {
+        width: 50px;
+    }
+
+    .bottom-footer {
+        font-size: 0.9em;
+    }
+
+    .social-media-icons i {
+        font-size: 1.2em;
+    }
+
+    .social-media-icons a {
+        margin-right: 10px;
+    }
+}
+
